@@ -1,0 +1,135 @@
+/* Body Background */
+body {
+  margin:0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 30px 20px;
+  color: white;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.header p {
+  margin-top: 8px;
+  opacity: 0.9;
+}
+
+/* Layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Card */
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* List Item */
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.list-item:hover {
+  background: #f1f5f9;
+  transform: scale(1.02);
+}
+
+/* Avatar */
+.avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.avatar.green {
+  background: linear-gradient(to right, #00c9ff, #92fe9d);
+}
+
+/* Name */
+.name {
+  flex: 1;
+  margin-left: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Buttons */
+.btn {
+  border: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+/* Add Button */
+.add {
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+}
+
+.add:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* Remove Button */
+.remove {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+
+.remove:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* Badge */
+.badge {
+  background: linear-gradient(to right, #11998e, #38ef7d);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+/* Empty */
+.empty {
+  color: #aaa;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
