@@ -133,3 +133,19 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Input */
+input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
